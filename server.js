@@ -47,6 +47,10 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', database: mongoose.connection.readyState === 1 ? 'connected' : 'disconnected' });
 });
 
+app.get('/', (req, res) => {
+  res.send('Enigoal API is running!');
+});
+
 app.use('/api/auth',    authRoutes);
 app.use('/api/schemes', schemesRoutes);
 app.use('/api/users',   usersRoutes);
