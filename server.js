@@ -24,6 +24,7 @@ app.use(morgan('dev'));
 
 const allowedOrigins = [
   process.env.CLIENT_URL || 'http://localhost:5173',
+  'https://enigial-frontend-7ybtfo0yw-anay.vercel.app',
   'http://localhost:3000',
   'http://localhost:4173',
 ];
